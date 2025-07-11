@@ -8,10 +8,10 @@ weight: 30
 
 ## Introduction
 
-The [Mendix Cloud GenAI portal](https://genai.home.mendix.com/) is an online platform that provides access to Mendix Cloud GenAI resource packs. These resource packs on Mendix Cloud enable seamless integration with Generative AI technology, provisioned and hosted by Mendix: 
+The [Mendix Cloud GenAI portal](https://genai.home.mendix.com/) is your one-stop shop to request access to Mendix Cloud GenAI resources. These resources enable seamless integration with Generative AI technology, provisioned and hosted by Mendix: 
 
-* GenAI Model Resource Packs provide access to model resources: Anthropic's  Claude and Cohere's Embed. 
-* GenAI Knowledge Base Resource Packs provide the infrastructure to deliver retrieval-augmented generation (RAG) architecture and other GenAI use cases requiring a vector database. 
+* GenAI Model Resources provide access to text and embeddings generation models: Anthropic's  Claude and Cohere's Embed. 
+* GenAI Knowledge Base Resources provide the infrastructure for retrieval-augmented generation (RAG) architectures and other GenAI use cases requiring a vector database. 
 
 GenAI resource packs accelerate the delivery of complete generative AI solutions within Mendix apps that seamlessly integrate with GenAI technology. Learn more by following these links to [Mendix Cloud GenAI Resource Packs](/appstore/modules/genai/mx-cloud-genai/resource-packs/) and the [Mendix Cloud GenAI Connector](/appstore/modules/genai/mx-cloud-genai/MxGenAI-connector/). To start with a GenAI-infused Mendix application, see [creating a chatbot using the AI Bot Starter App](/appstore/modules/genai/using-genai/starter-template/) or [building a GenAI app from scratch with the Blank GenAI App](/appstore/modules/genai/using-genai/blank-app/). 
 
@@ -32,7 +32,7 @@ The **Settings** tab contains the details of a GenAI resource. It shows the foll
 * **Plan**: indicates the subscription plan used for compute resources (for example, embedding or text generation resources).
 * **Environment**: shows which environment is used, for example, test, acceptance, or production.
 
-When you are looking at the knowledge base resource settings, you will also see details of the associated embeddings resource and vice versa. To learn more about embeddings, see the [Embedding vector](/appstore/modules/genai/rag/#embedding-vector) section of *RAG in a Mendix App*.
+When you are looking at the knowledge base resource settings, you will also see details of the associated embeddings resource and vice versa. To learn more about embeddings, please read the [Embedding vector](/appstore/modules/genai/rag/#embedding-vector) section of *RAG in a Mendix App*.
 
 #### Cross-Region Inference (CRI)
 
@@ -96,6 +96,14 @@ For example, a GenAI Knowledge Base could be used to store customer support tick
 #### Add Data from a Mendix Application
 
 You can upload data directly from Mendix to the Knowledge Base. To do so, several operations of the Mendix Cloud GenAI Connector are required. For a detailed guide on this process, see the [Add Data Chunks to Your Knowledge Base](/appstore/modules/genai/mx-cloud-genai/MxGenAI-connector/#add-data-chunks-to-your-knowledge-base) section of **Mendix Cloud GenAI Connector**.
+
+#### Add Data from an External Datasource: Confluence (Beta)
+
+Another available option for adding data to your knowledge base is to ingest information stored in Confluence. Select the **Connect to Confluence** option and follow the steps to fill in your connection details. After successful creation of the new datasource, you can start the actual data ingestion by pressing the symbol for **Sync external data source** in the card displaying the external data source's information inside of the content overview. More buttons to view details about the ingestion job or delete the data source are available, too.
+
+{{< figure src="/attachments/appstore/platform-supported-content/modules/genai/navigate_mxgenai/ManageConfluenceDatasource.png" >}}
+
+Use the collection name displayed in this same card to connect to the confluence data source from a Mendix app and access its knoweldge after the synchronization has ended successfully.
 
 ## Token Consumption Monitor
 
