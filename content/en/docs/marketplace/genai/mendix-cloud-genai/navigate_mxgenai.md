@@ -99,11 +99,11 @@ You can upload data directly from Mendix to the Knowledge Base. To do so, severa
 
 #### Add Data from an External Datasource: Confluence (Beta)
 
-Another available option for adding data to your knowledge base is to ingest information stored in Confluence. Select the **Connect to Confluence** option and follow the steps to fill in your connection details. After successful creation of the new datasource, you can start the actual data ingestion by pressing the symbol for **Sync external data source** in the card displaying the external data source's information inside of the content overview. More buttons to view details about the ingestion job or delete the data source are available, too.
+To add data to your knowledge base, you can also ingest information stored in Confluence. Select the Connect to Confluence option and follow the steps to enter your connection details. The system uses basic authentication, requiring only an API key without scopes, which you can create [here](https://id.atlassian.com/manage-profile/security/api-tokens). Once you've successfully created the new data source, you can initiate the data ingestion by clicking the **Sync Datasource** icon on the details card in the content overview. Additional buttons are available to view ingestion job details or delete the data source.
 
 {{< figure src="/attachments/appstore/platform-supported-content/modules/genai/navigate_mxgenai/ManageConfluenceDatasource.png" >}}
 
-Use the collection name displayed in this same card to connect to the confluence data source from a Mendix app and access its knoweldge after the synchronization has ended successfully.
+Use the collection name shown on the card to connect your Mendix application to the Confluence data source. You can access this knowledge once the synchronization process has completed successfully.
 
 ## Token Consumption Monitor
 
