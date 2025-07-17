@@ -105,6 +105,8 @@ To add data to your knowledge base, you can also ingest information stored in Co
 
 Use the collection name shown on the card to connect your Mendix application to the Confluence data source. You can access this knowledge once the synchronization process has completed successfully.
 
+Please note that Confluence data sources are still in preview at AWS and don't support multimodal data, such as tables, charts, diagrams, or other images. You can find out more [here](https://docs.aws.amazon.com/bedrock/latest/userguide/confluence-data-source-connector.html).
+
 ## Token Consumption Monitor
 
 The **Token Consumption Monitor** shows detailed graphs of the token consumption used by the GenAI resource. Use this overview to see the current usage, insights on the usage per day, and to compare the current month with previous months.
