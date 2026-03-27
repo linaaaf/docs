@@ -978,7 +978,7 @@ This microflow creates a new [MetadataCollection](#metadatacollection-entity) an
 
 #### `ENUM_SourceType` {#enum-sourcetype}
 
-`ENUM_SourceType` provides a list of source types, which describes how the pointer to the `Source` attribute on the [Reference](#reference) object should be interpreted to get the source location. Currently, only `Url` is supported.
+`ENUM_SourceType` provides a list of source types, which describes how the pointer to the `Source` attribute on the [Reference](#reference) object should be interpreted to get the source location. Currently, only `Url` is supported and this attribute should be left empty if the source is not an URL.
 
 | Name | Caption | Description |
 | --- | --- | --- |
