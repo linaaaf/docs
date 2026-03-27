@@ -84,6 +84,8 @@ The `DeployedModel` entity replaces the capabilities that were covered by the `C
 | `SupportsConversationsWithHistory` | An enum to specify if the model supports conversation with history. |
 | `SupportsFunctionCalling` | An enum to specify if the model supports function calling. |
 | `IsActive` | A boolean to specify if the model is active/usable with the current authentication settings and user preference. |
+| `ModelDocumentID` | The document ID of the corresponding Studio Pro document, if the model was created in studio pro. If the model was created manually in the running app, this field is empty. |
+| `_QualifiedName` | The document name of the corresponding Studio Pro document, if the model was created in studio pro. If the model was created manually in the running app, this field is empty. |
 
 #### `ConsumedKnowledgeBase` {#consumed-knowledge-base}
 
@@ -104,6 +106,8 @@ As these objects are created as a specialization by the logic in connectors them
 | `GetCollectionsMicroflow` | The microflow to execute to retrieve selectable options for collections present in the specified consumed knowledge base. |
 | `GetDeployedKnowledgeBaseMicroflow` | The microflow to retrieve selectable options for collections present in the specified consumed knowledge base. |
 | `IsSelectable` | A boolean to specify if the knowledge base resource is active or usable when defining agents. |
+| `ModelDocumentID` | The document ID of the corresponding Studio Pro document, if the knowledge base was created in studio pro. If the knowledge base was created manually in the running app, this field is empty. |
+| `_QualifiedName` | The document name of the corresponding Studio Pro document, if the knowledge base was created in studio pro. If the knowledge base was created manually in the running app, this field is empty. |
 
 #### `DeployedKnowledgeBase` {#deployed-knowledge-base}
 
