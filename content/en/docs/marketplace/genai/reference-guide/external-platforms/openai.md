@@ -208,8 +208,6 @@ For [Chat Completions (without history)](/appstore/modules/genai/genai-for-mx/co
 You can send up to 100 pages across multiple files, with a maximum combined size of 32 MB per conversation.  Currently, processing multiple files with OpenAI is not always guaranteed and can lead to unexpected behavior (for example, only one file being processed).
 
 {{% alert color="info" %}}
-Microsoft Foundry does not currently support file input.
-
 Note that the model uses the file name when analyzing documents, which may introduce a potential vulnerability to prompt injection. To reduce this risk, consider modifying the string or not passing it at all.
 {{% /alert %}}
 
